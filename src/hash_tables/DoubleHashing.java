@@ -5,6 +5,10 @@ public class DoubleHashing extends HashTable {
         super(size,loadFactor);
     }
 
+    /**
+     * @param key
+     * @return index
+     */
     @Override
    public int insert(Object key) {
         HashObject entry = new HashObject(key);
@@ -38,16 +42,10 @@ public class DoubleHashing extends HashTable {
         return index;
     }
 
-    @Override
-    void delete(Object key) {
 
-    }
-
-    @Override
-    int search(Object key) {
-        return 0;
-    }
-
+    /**
+     * @return String
+     */
     @Override
     public String toString() {
         String hashtableTest="HashtableTest: ";

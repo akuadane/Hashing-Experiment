@@ -3,6 +3,13 @@ package debuggers;
 import hash_tables.HashTable;
 
 public class DebuggerLevelZero implements Debugger{
+
+    /**
+     * @param inputType
+     * @param linearHashing
+     * @param doubleHashing
+     */
+
     @Override
     public void debug( int inputType, HashTable linearHashing, HashTable doubleHashing) {
         String hashtableTest="HashtableTest: ";

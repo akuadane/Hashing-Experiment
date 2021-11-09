@@ -6,41 +6,12 @@ public class LinearProbing extends HashTable {
         super(size,loadFactor);
     }
 
+    /**
+     * @param key
+     * @return index of the place the element was inserted at
+     */
     @Override
     public int insert(Object key) {
-//        HashObject entry= new HashObject(key);
-//
-//        int index= this.positiveMod(key.hashCode(),this.size);
-
-//        if(this.hashTable[index]==null){
-//            entry.incrementProbe();
-//            this.hashTable[index]=entry;
-//            return index;
-//        }
-//
-//        while (entry.probe<=this.size){
-//                index++;
-//
-//                if(index>this.size){
-//                    index=0;
-//                }
-//                entry.incrementProbe();
-//
-//            if(this.hashTable[index]==null){
-//                entry.incrementProbe();
-//                this.hashTable[index]=entry;
-//                return index;
-//            }else if(this.hashTable[index].getKey().equals(entry.getKey())){
-//                this.hashTable[index].incrementFrequency();
-//                return -1;
-//
-//            }
-//
-//
-//        }
-//
-//        return -1;
-
 
         HashObject entry= new HashObject(key);
         int h= this.positiveMod(key.hashCode(),this.size);
@@ -74,16 +45,10 @@ public class LinearProbing extends HashTable {
 
     }
 
-    @Override
-    void delete(Object key) {
 
-    }
-
-    @Override
-    int search(Object key) {
-        return 0;
-    }
-
+    /**
+     * @return  the summary of the hashtable
+     */
     @Override
     public String toString() {
         String hashtableTest="HashtableTest: ";

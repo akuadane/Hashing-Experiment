@@ -4,7 +4,10 @@ public class HashObject {
     private Object key;
     int frequency,probe;
 
-    HashObject(Object key){
+    /**
+     * @param key the element we want to store
+     */
+     HashObject(Object key){
         this.key   = key;
         this.frequency=0;
         this.probe=0;

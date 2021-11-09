@@ -9,6 +9,10 @@ public class RandomDataGenerator implements DataGenerator{
     public RandomDataGenerator(){
         random = new Random();
     }
+
+    /**
+     * @param hashTable
+     */
     @Override
     public void generateData(HashTable hashTable) {
         while(((double)(hashTable.getNumItems()-hashTable.getDuplicates())/(double)hashTable.getSize())<hashTable.getLoadFactor()){

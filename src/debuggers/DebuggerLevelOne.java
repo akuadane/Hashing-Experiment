@@ -7,8 +7,15 @@ import hash_tables.HashTable;
 import java.io.File;
 import java.io.FileWriter;
 
+
 public class DebuggerLevelOne implements Debugger{
     private String linearHashingFileName="linear-dump.txt", doubleHashingFileName="double-dump.txt" ;
+
+    /**
+     * @param inputType
+     * @param linearHashing
+     * @param doubleHashing
+     */
 
     @Override
     public void debug( int inputType, HashTable linearHashing, HashTable doubleHashing) {
@@ -19,6 +26,10 @@ public class DebuggerLevelOne implements Debugger{
 
     }
 
+    /**
+     * @param linearHashing
+     * @param doubleHashing
+     */
     private void dumpToFile(HashTable linearHashing, HashTable doubleHashing){
        try {
 

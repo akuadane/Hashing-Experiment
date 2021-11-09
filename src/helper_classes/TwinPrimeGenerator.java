@@ -1,6 +1,11 @@
 package helper_classes;
 
 public class TwinPrimeGenerator {
+    /**
+     * @param start
+     * @param end
+     * @return list of the two twin prime numbers
+     */
     static public int[] smallestTwinPrimes(int start,int end){
 
         for(int i=start;i<=end;i++){
@@ -10,6 +15,11 @@ public class TwinPrimeGenerator {
         }
         return null;
     }
+
+    /**
+     * @param num
+     * @return true if num is prime, false otherwise
+     */
     static private boolean isPrime(int num){
         int factors=0;
         for(int i=1;i<=num;i++){

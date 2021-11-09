@@ -4,6 +4,9 @@ import hash_tables.HashTable;
 
 public class SystemTimeDataGenerator implements DataGenerator{
 
+    /**
+     * @param hashTable
+     */
     @Override
     public void generateData(HashTable hashTable) {
         while(((double)(hashTable.getNumItems()-hashTable.getDuplicates())/(double)hashTable.getSize())<hashTable.getLoadFactor()){

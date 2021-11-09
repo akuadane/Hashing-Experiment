@@ -12,6 +12,12 @@ abstract public class HashTable {
         this.loadFactor= loadFactor;
         this.hashTable = new HashObject[size];
     }
+
+    /**
+     * @param dividend
+     * @param divisor
+     * @return a positive % value of the two numbers
+     */
     protected int positiveMod(int dividend, int divisor){
        int value = dividend % divisor;
 
@@ -22,9 +28,6 @@ abstract public class HashTable {
     }
 
     abstract public int insert(Object key);
-    abstract void delete(Object key);
-    abstract int search(Object key);
-
     public int getSize(){return this.size;}
     public int getNumItems(){return this.numItems;}
     public double getLoadFactor(){return this.loadFactor;}
