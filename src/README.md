@@ -1,8 +1,8 @@
 # Project #: Project Name
 
-* Author: Your Name
-* Class: CS321 Section #
-* Semester: 
+* Author: Akayou Kitessa
+* Class: CS321 Section #3
+* Semester: Fall-21
 
 ## Overview
 

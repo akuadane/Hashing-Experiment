@@ -10,4 +10,5 @@ public interface Debugger {
      * @param doubleHashing
      */
     void debug(int inputType, HashTable linearHashing, HashTable doubleHashing);
+
 }

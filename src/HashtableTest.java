@@ -4,6 +4,7 @@ import data_generators.RandomDataGenerator;
 import data_generators.SystemTimeDataGenerator;
 import debuggers.Debugger;
 import debuggers.DebuggerLevelOne;
+import debuggers.DebuggerLevelTwo;
 import debuggers.DebuggerLevelZero;
 import hash_tables.DoubleHashing;
 import hash_tables.HashTable;
@@ -12,8 +13,6 @@ import helper_classes.TwinPrimeGenerator;
 
 public class HashtableTest {
     public static void main(String[] args) {
-
-
 
         if(args.length>3 || args.length<2){
             System.out.println("Usage: java HashtableTest <input type> <load factor> [<debug level>]\n" +
@@ -40,10 +39,8 @@ public class HashtableTest {
         DataGenerator dataGenerator;
 
         switch (inputType){
-            case 2: dataGenerator = new SystemTimeDataGenerator();
-                    break;
-            case 3: dataGenerator = new FileDataGenerator();
-                    break;
+            case 2: dataGenerator = new SystemTimeDataGenerator();break;
+            case 3: dataGenerator = new FileDataGenerator();break;
             case 1:
             default: dataGenerator = new RandomDataGenerator();
         }
@@ -54,8 +51,8 @@ public class HashtableTest {
         Debugger debugger;
 
         switch (debugLevel){
-            case 1: debugger = new DebuggerLevelOne();
-                    break;
+            case 1: debugger = new DebuggerLevelOne();break;
+            case 2: debugger = new DebuggerLevelTwo(); break;
             case 0:
             default: debugger = new DebuggerLevelZero();
         }

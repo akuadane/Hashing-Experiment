@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileDataGenerator implements DataGenerator{
-    final String FILE_NAME = "./data_generator/word-list";
+    final String FILE_NAME = ".\\data_generators\\word-list";
 
     /**
      * @param hashTable
